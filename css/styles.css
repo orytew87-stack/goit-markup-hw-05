@@ -488,9 +488,10 @@ body {
 .backdrop {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: #1111113d;
+    background-color: rgba(46, 47, 66, 0.4);
     backdrop-filter: blur(2px);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -508,16 +509,16 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%, -50%);
     border-radius: 4px;
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     background-color: #FCFCFC;
-    padding: 72px 24px 24px;
+    padding: 72px 24px 24px 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition-property: opacity, transform;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);   
     transition-delay: 0ms;
-    
 }
 .backdrop.is-open .modal {
     transition-delay: 200ms;
@@ -580,7 +581,6 @@ body {
 }
 .modal-form-input {
     width: 100%;
-    border: 1px solid #2E2F42;
     border-radius: 4px;
     padding: 8px 38px;
     height: 40px;
@@ -589,6 +589,7 @@ body {
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
+    border: 1px solid rgba(46, 47, 66, 0.4);
 }
 .modal-form-input:focus {
     border-color: #4D5AE5;
@@ -637,7 +638,9 @@ body {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-shrink: 0;
     margin-right: 8px;
 
@@ -645,10 +648,10 @@ body {
 .modal-form-link {
     color: #4D5AE5;
 }
-input[type="checkbox"]:checked + 
-.modal-form-content > .modal-form-checkbox {
-    background-color: #404BBF;
-    border-color: #404BBF;
+input[type="checkbox"]:checked + .modal-form-content> .modal-form-checkbox {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
 }
 .modal-form-checkbox-icon {
     fill: transparent;
