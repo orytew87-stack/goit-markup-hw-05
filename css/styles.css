@@ -649,7 +649,7 @@ body {
     color: #4D5AE5;
 }
 
-.modal-form-input-check:checked + .modal-form-content> .modal-form-checkbox {
+.modal-form-input:checked + .modal-form-content> .modal-form-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -658,7 +658,7 @@ body {
     fill: transparent;
     transition: 150ms ease-in;
 }
-input[type="checkbox"]:checked + .modal-form-content .modal-form-checkbox-icon {
+.modal-form-input:checked + .modal-form-content .modal-form-checkbox-icon {
     fill: #F4F4FD;
 }
 
