@@ -557,12 +557,12 @@ body {
 }
 .modal-form-field {
     margin-bottom: 8px;
+    display:flex;
+    flex-direction: column;
+    gap: 4px;
 }
 .modal-form-label {
-    display: block;
-    margin-bottom: 4px;
     color:#8E8F99;
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -649,7 +649,7 @@ body {
     color: #4D5AE5;
 }
 
-input[type="checkbox"]:checked + .modal-form-content> .modal-form-checkbox {
+.modal-form-input-check:checked + .modal-form-content> .modal-form-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
