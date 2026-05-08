@@ -559,13 +559,13 @@ body {
     margin-bottom: 8px;
     display:flex;
     flex-direction: column;
-    gap: 4px;
 }
 .modal-form-label {
     color:#8E8F99;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    margin-bottom: 4px;
 }
 .modal-form-wrapper {
     position: relative;
